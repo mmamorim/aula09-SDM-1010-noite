@@ -4,7 +4,11 @@ Exemplo Servidor Operações GET / POST / PUT / DELETE
 
 para usar esse projeto:
 
-1. git clone https://github.com/mmamorim/aula09-SDM-1010-noite.git
+1. Clonar este repositório
+
+```
+git clone https://github.com/mmamorim/aula09-SDM-1010-noite.git
+```
 
 2. entrar na pasta ou abrir o projeto (pasta) no VSCode
 
