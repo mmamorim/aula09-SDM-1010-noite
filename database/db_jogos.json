@@ -66,6 +66,15 @@
       "joga": [
         "LoL"
       ]
+    },
+    "maria": {
+      "id": "maria",
+      "nome": "Maria",
+      "idade": 25,
+      "joga": [
+        "LoL",
+        "pacman"
+      ]
     }
   }
 }
