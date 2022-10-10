@@ -41,6 +41,12 @@
       "nome": "xyz",
       "produtora": "sdwdwdwd",
       "tipo": "wdwdwdwdwd"
+    },
+    "jogo01": {
+      "id": "jogo01",
+      "nome": "NOVO NOME 1 xxxxxx",
+      "produtora": "PRODUTORA xxxxx",
+      "tipo": "SEI LÁ xxxxx"
     }
   },
   "jogadores": {
