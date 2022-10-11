@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do servidor</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .item {
+            border: 1px solid black;
+            margin: 1px;
+            padding: 2px;
+        }
+
+        .fundo {
+            background-color: #d0d0d0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Teste do servidor</h1>
+    <button id="botao1">pegar jogos</button>
+    <button id="botao2">pegar jogadores</button>
+    <div id="caixa" class="item" style="width: 300px">
+
+    </div>
+
+    <script>
+
+        console.log('oi gente');
+
+        let elem1 = document.getElementById('botao1')
+        let elem2 = document.getElementById('botao2')
+
+        elem1.addEventListener('click', () => {
+            console.log('cliquei no botão 1')
+            axios.get('http://localhost:3000/jogos').then((response) => {
+                // handle success
+                console.log(response.data);
+
+                let caixa = document.getElementById('caixa')
+                caixa.innerHTML = ''
+                let jogos = response.data
+                for (let key in jogos) {
+                    caixa.innerHTML = caixa.innerHTML + '<p class="item fundo">' + jogos[key].nome + '<p>'
+                }
+            })
+        })
+
+        elem2.addEventListener('click', () => {
+            console.log('cliquei no botão 2')
+            axios.get('http://localhost:3000/jogadores').then((response) => {
+                // handle success
+                console.log(response.data);
+
+                let caixa = document.getElementById('caixa')
+                caixa.innerHTML = ''
+                let jogadores = response.data
+                for (let key in jogadores) {
+                    caixa.innerHTML = caixa.innerHTML + '<p>' + jogadores[key].nome + '<p>'
+                }
+
+            })
+        })
+
+
+
+    </script>
+</body>
+
+</html>

@@ -20,3 +20,12 @@ git clone https://github.com/mmamorim/aula09-SDM-1010-noite.git
     npm install
     npm run server
 ```
+
+durante a aula utilizei as extensões:
+
+Thunder Client
+
+Liver Server
+
+https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch
+https://axios-http.com/docs/intro
